@@ -43,8 +43,11 @@ class FeedbackWidget extends HTMLElement {
 		try {
 			const response = await fetch(`http://localhost:4000/api/feedback/getFeedbacks/${spaceName}`,{
 				method: 'GET',
-				credentials:'include'
-			});
+				credentials:'include',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			})
 			if (response.ok) {
 				return await response.json();
 			} else {
