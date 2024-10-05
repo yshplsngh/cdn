@@ -9,7 +9,9 @@ class FeedbackWidget extends HTMLElement {
 
 		this.render(spaceName);
 		this.fetchFeedbacks(spaceName).then((feedbacks) => {
-			if (feedbacks) {  // Add a check here
+			console.log(feedbacks);
+			if (feedbacks) {
+				console.log('feedbacks loaded');
 				this.displayFeedbacks(feedbacks);
 			}
 		});
