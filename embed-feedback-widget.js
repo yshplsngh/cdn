@@ -31,11 +31,6 @@ class FeedbackWidget extends HTMLElement {
                 background-color: #f0f0f0;
                 color: #333;
             }
-            #feedbacks {
-                margin-top: 10px;
-                max-height: 150px;
-                overflow-y: auto;
-            }
         `;
 
 		this.shadowRoot.innerHTML = `
