@@ -43,13 +43,13 @@
 
   submitButton.addEventListener('click', () => {
     const feedback = feedbackTextarea.value;
-    const projectId = new URLSearchParams(window.location.search).get('projectId');
-    submitFeedback(feedback, projectId);
+
+    console.log('feedback done on backend')
+    // const projectId = new URLSearchParams(window.location.search).get('projectId');
+    // submitFeedback(feedback);
   });
 
-  async function submitFeedback(feedback, projectId) {
-    console.log('feedback done on backend')
-
+  // async function submitFeedback(feedback) {
     // try {
     //   const response = await fetch('https://your-api-endpoint.com/submit-feedback', {
     //     method: 'POST',
@@ -68,7 +68,7 @@
     //   console.error('Error submitting feedback:', error);
     //   alert('Failed to submit feedback. Please try again.');
     // }
-  }
+  // }
 </script>
 </body>
 </html>

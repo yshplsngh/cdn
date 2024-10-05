@@ -1,7 +1,7 @@
 (function() {
   function createFeedbackWidget(projectId) {
     const iframe = document.createElement('iframe');
-    iframe.src = `https://your-domain.com/feedback-widget.html?projectId=${encodeURIComponent(projectId)}`;
+    iframe.src = `https://yshplsngh.github.io/cdn/feedback-widget.html`;
     iframe.style.position = 'fixed';
     iframe.style.bottom = '15px';
     iframe.style.right = '15px';
